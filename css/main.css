@@ -67,6 +67,8 @@ body {
   position: fixed;
   display: none;
   z-index: 1000; }
+  .hamburger-icon .open {
+    cursor: pointer; }
   @media only screen and (max-width: 43.75em) {
     .hamburger-icon {
       display: block; } }
@@ -74,7 +76,7 @@ body {
 .hamburger {
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 180, 0, 0.9);
+  background-color: #ffb400;
   z-index: 2000;
   width: 0;
   transition: all .5s;
@@ -88,7 +90,8 @@ body {
     position: absolute;
     top: 1rem;
     left: 2rem;
-    color: #f1f2f6; }
+    color: #f1f2f6;
+    cursor: pointer; }
   .hamburger__list {
     margin-top: 2rem; }
   .hamburger__link {
@@ -214,7 +217,7 @@ body {
   .country__item {
     position: relative;
     overflow: hidden;
-    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
     border-radius: .5rem;
     backface-visibility: hidden; }
   .country__photo {
@@ -234,7 +237,7 @@ body {
     text-align: center;
     opacity: 0;
     font-weight: 700;
-    transition: all .8s;
+    transition: all .3s;
     backface-visibility: hidden; }
     @media only screen and (max-width: 68.75em) {
       .country__caption {
@@ -270,7 +273,7 @@ body {
   align-items: center;
   position: relative;
   margin-top: 5rem;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
   transition: all .5s; }
   @media only screen and (max-width: 68.75em) {
     .packages-box {
